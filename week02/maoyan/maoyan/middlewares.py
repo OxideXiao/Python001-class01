@@ -128,7 +128,7 @@ class RandomHttpProxyMiddleware(HttpProxyMiddleware):
         proxy = random.choice(self.proxies[scheme])
         request.meta['proxy'] = proxy
 
-class RequestCheckMiddleware:
+class RequestCheckMiddleware: # 检查request的信息，看是否加上了proxy
     def process_request(self, request, spider):
         print('===============')
         print('request 信息: ', request.meta)
