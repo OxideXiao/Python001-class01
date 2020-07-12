@@ -9,3 +9,4 @@
 4. requests.Session方法返回的对象可以为其发出的所有请求保持同一个cookie。便于后续模拟同一个用户发出信息的场景
 
 5. 关于中间件：对于DOWNLOADER_MIDDLEWARES，在request前端，数值越小的越先被调用；在response阶段，数字越大的越先被调用
+
